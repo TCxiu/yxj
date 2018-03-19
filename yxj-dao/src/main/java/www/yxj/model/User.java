@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 public class User implements Serializable {
     private int id;
     private String name;
+    private int age;
     private LocalDateTime birthday;
 
     public int getId() {
@@ -31,4 +32,13 @@ public class User implements Serializable {
     public void setBirthday(LocalDateTime birthday) {
         this.birthday = birthday;
     }
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+    
 }
